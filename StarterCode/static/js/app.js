@@ -42,7 +42,7 @@ function buildPlots(id) {
                 y: topTen,
                 text: labels,
                 marker: {
-                color: 'teal'},
+                color: '008080'},
                 type:"bar",
                 orientation: "h",
             }];
@@ -85,7 +85,6 @@ function buildPlots(id) {
                 height: 600,
                 width: 1000
             };
-
         // Create the Bubble Chart
         Plotly.newPlot("bubble", bubbleTrace, bubbleLayout); 
     });
@@ -121,7 +120,7 @@ function getDemo(id) {
 //###############################################################################
 // Create the function for the switch event
 //###############################################################################
-d3.selectAll("body").on("change", optionChanged);
+//d3.selectAll("body").on("change", optionChanged);
 
 function optionChanged(id) {
     // Use D3 to select the dropdown menu
